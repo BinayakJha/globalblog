@@ -1,0 +1,435 @@
+<head>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+<div class="toolbar">
+	<ul class="tool-list">
+		<li class="tool">
+			<button type="button" data-command='justifyLeft' class="tool--btn">
+				<i class=' fas fa-align-left'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command='justifyCenter' class="tool--btn">
+				<i class=' fas fa-align-center'></i>
+			</button>
+		</li>
+    <li class="tool">
+			<button type="button" data-command='justifyRight' class="tool--btn">
+				<i class=' fas fa-align-right'></i>
+			</button>
+		</li>
+    <li class="tool">
+			<button type="button" data-command='strikethrough' class="tool--btn">
+				<i class=' fas fa-strikethrough'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="bold" class="tool--btn">
+				<i class=' fas fa-bold'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="italic" class="tool--btn">
+				<i class=' fas fa-italic'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="underline" class="tool--btn">
+				<i class=' fas fa-underline'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="insertOrderedList" class="tool--btn">
+				<i class=' fas fa-list-ol'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="insertUnorderedList" class="tool--btn">
+				<i class=' fas fa-list-ul'></i>
+			</button>
+		</li>
+		<li class="tool">
+			<button type="button" data-command="createlink" class="tool--btn">
+				<i class=' fas fa-link'></i>
+			</button>
+		</li>
+	</ul>
+</div>
+<!-- Countries Flag -->
+<button type="button" class="collapsible">Countries Flags(Click here then Drag and Drop)</button>
+<div class="content">
+<div class="flex-container">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag1" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Afganistan">
+</div>
+
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag2" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Albania">
+</div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/DZA.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag3" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Algeria">
+</div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/AND.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag4" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Andorra">
+</div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/AGO.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag5" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Angola">
+</div>
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/ATG.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag6" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Antigua and Barbuda">
+</div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/ARG.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag7" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Argentina">
+</div>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/ARM.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag8" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Armenia">
+</div>
+<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/AUS.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag9" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Australia">
+</div>
+<div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/AUT.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag10" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Austria">
+</div>
+<div id="div300" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/CAF.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag300" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Central African Republic">
+</div>
+</div>
+
+<div class="flex-container">
+<div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/AZE.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag11" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Ajerbaijan">
+</div>
+<div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BHS.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag12" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bahamas">
+</div>
+<div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BHR.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag13" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bahrain">
+</div>
+<div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BGD.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag14" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bangladesh">
+</div>
+<div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BRB.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag15" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Barbados">
+</div>
+<div id="div17" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BLR.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag16" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Belarus">
+</div>
+<div id="div18" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BEL.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag17" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Belgium">
+</div>
+<div id="div19" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BLZ.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag18" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Belize">
+</div>
+<div id="div20" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BEN.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag19" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Benin">
+</div>
+<div id="div21" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BTN.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag20" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bhutan">
+</div>
+<div id="div200" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/CAN.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag200" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Canada">
+</div>
+</div>
+<div class="flex-container">
+
+<div id="div22" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BOL.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag21" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bolivia">
+</div>
+<div id="div23" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BIH.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag22" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bosnia and Herzegovina">
+</div>
+<div id="div24" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BWA.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag23" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Botswana">
+</div>
+<div id="div25" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BRA.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag24" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Brazil">
+</div>
+<div id="div26" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BRN.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag25" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Brunei Darussalam">
+</div>
+<div id="div27" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BGR.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag26" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Bulgaria">
+</div>
+<div id="div28" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BFA.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag27" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Burkina Faso">
+</div>
+<div id="div29" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/BDI.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag28" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Burundi">
+</div>
+<div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/CPV.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag29" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Carbo Verde">
+</div>
+<div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/KHM.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag30" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Cambodia">
+</div>
+<div id="div32" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://session.muncommand.com/assets/flags/CMR.svg" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag31" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Cameroon">
+</div>
+</div>
+<div class="flex-container">
+<div id="div33" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://cdn11.bigcommerce.com/s-ey7tq/images/stencil/1280x1280/products/3320/18821/ireland-flag__72814.1575333970.jpg?c=2" draggable="true" ondragstart="drag(event)" onmouseover="document.getElementById('div2') .style='border:1px solid black'" id="drag32" width="100" height="74"data-toggle="tooltip" data-placement="top" title="Ireland">
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<style>
+.print {
+  
+}
+ @media print {
+	.print {display:block}
+	.btn-print{display:none;}
+  .tool{display:none;}
+  .collapsible{display:none;}
+  .content{display:none;}
+#div1,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#div8,
+#div9,
+#div10,
+#div300,
+#div11,
+#div12,
+#div13,
+#div14,
+#div15,
+#div16,
+#div17,
+#div18,
+#div19,
+#div20,
+#div21,
+#div200,
+#div22,
+#div23,
+#div24,
+#div25,
+#div26,
+#div27,
+#div28,
+#div29,
+#div30,
+#div31,
+#div32,
+#div33{display:none;}
+
+}
+</style>
+  <button  onclick="javascript:print()" class="btn-print">Print</button>
+  <div class="print">
+<center><div id="output" contenteditable="true" style="text-align:left;">
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" placeholder="Country Flag"></div>
+  <b>Country:<br>
+  Committee:<br>
+  Topic Area:<br>
+  Delegates:<br></b>
+  </div>
+  </div></center>
+<style>
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition:1s;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.flex-container{
+   display: flex;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.toolbar {}
+.tool-list {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	margin: 1rem;
+	overflow: hidden;
+	border-raduis: 10px;
+}
+.tool {}
+.tool--btn {
+	display: block;
+	border: none;
+	padding: .5rem;
+	font-size: 20px;
+}
+
+#output {
+	min-height: 595px; 
+  width:842px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin: 1rem;
+	padding: 1rem;
+	font-family:'Times New Roman', Times, serif;
+         line-height: 1.5;
+         font-size:16px;
+
+}
+</style>
+<!-- dragger -->
+<style>
+#div2 {
+  float: left;
+  width: 100px;
+  height: 74px;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+#div1{
+  width: 100px;
+  height: 74px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#div8,
+#div9,
+#div10,
+#div300,
+#div11,
+#div12,
+#div13,
+#div14,
+#div15,
+#div16,
+#div17,
+#div18,
+#div19,
+#div20,
+#div21,
+#div200,
+#div22,
+#div23,
+#div24,
+#div25,
+#div26,
+#div27,
+#div28,
+#div29,
+#div30,
+#div31,
+#div32,
+#div33{
+  width: 100px;
+  height: 74px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+ 
+</style>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+
+
+
+<!-- Close Dragger -->
+
+
+
+
+<script>
+let output = document.getElementById('output');
+let buttons = document.getElementsByClassName('tool--btn');
+for (let btn of buttons) {
+	btn.addEventListener('click', () => {
+		let cmd = btn.dataset['command'];
+		if(cmd === 'createlink') {
+			let url = prompt("Enter the link here: ", "http:\/\/");
+			document.execCommand(cmd, false, url);
+		} else {
+			document.execCommand(cmd, false, null);
+		}
+	})
+}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- AOS -->
+  <script>
+   AOS.init({
+            duration: 1200,
+        })
+</script>
+</body>
